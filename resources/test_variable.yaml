@@ -1,0 +1,30 @@
+todo-web:  https://abhigyank.github.io/To-Do-List/
+browser:   Chrome
+chrome-driver-path:    E:/Driver/chromedriver.exe
+#over all
+title-name:    xpath:/html/body/div/h1
+add-item-name:    xpath:/html/body/div/div/div[1]/a[1]
+to-do-tasks-name :  xpath:/html/body/div/div/div[1]/a[2]
+completed-name:   xpath:/html/body/div/div/div[1]/a[3]
+#add item side
+field-add-task:   id:new-task
+add-task-bar:   xpath://*[@id="add-item"]/div
+add-item-bar:    id:add-item
+add-item-button:    xpath://*[@id="add-item"]/button
+#ttodo side
+incomplete-tasks:   id:incomplete-tasks
+tasks-field:   xpath://*[@id="incomplete-tasks"]/li[1]
+task-field:    xpath:/html/body/div/div/div[3]/ul/li['${index}']
+task-field-name:    xpath:/html/body/div/div/div[3]/ul/li['${index}']/label/span[1]
+task-name:    xpath:/html/body/div/div/div[3]/ul/li['${index}']/label/span[1]
+delete-button:   xpath:/html/body/div/div/div[3]/ul/li['${index}']/button
+task-checkbox:    xpath://*[@id="incomplete-tasks"]/li['${index}']/label/span[2]
+
+#completed side
+completed-tasks:    id:completed-tasks
+completed-task:   xpath://*[@id="completed-tasks"]/li['${index}']
+completed-task-name:    xpath:/html/body/div/div/div[4]/ul/li['${index}']/span
+completed-task-checked-box:    xpath://*[@id="completed-tasks"]/li['${index}']/span/i
+completed-task-delete-button:    xpath:/html/body/div/div/div[4]/ul/li['${index}']/button
+
+
